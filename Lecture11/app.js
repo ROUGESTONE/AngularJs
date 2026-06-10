@@ -15,5 +15,12 @@
                 $scope.state = "Fed";
         }
     }
+      function LovesFilter(){
+        return function (input){
+            input = input || "";
+            input = input.replace("likes","loves");
+            return input;
+        };
+    }
 
 })();
